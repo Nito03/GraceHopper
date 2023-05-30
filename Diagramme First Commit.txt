@@ -1,0 +1,50 @@
++------------------------------------+
+|              Utilisateur            |
++------------------------------------+
+| - id: String                       |
+| - nom: String                      |
+| - email: String                    |
+| - motDePasse: String               |
++------------------------------------+
+| + seConnecter(): void              |
+| + creerReservation(): void         |
+| + consulterReservation(): void     |
++------------------------------------+
+
++------------------------------------+
+|               Voiture               |
++------------------------------------+
+| - id: String                       |
+| - marque: String                   |
+| - modele: String                   |
+| - disponibilite: boolean           |
+| - tarifJournalier: double          |
++------------------------------------+
+| + verifierDisponibilite(): boolean |
++------------------------------------+
+
++------------------------------------+
+|              Reservation             |
++------------------------------------+
+| - id: String                       |
+| - utilisateur: Utilisateur         |
+| - voiture: Voiture                 |
+| - dateDebut: Date                  |
+| - dateFin: Date                    |
+| - montant: double                  |
+| - statut: String                   |
++------------------------------------+
+| + confirmer(): void                |
+| + annuler(): void                  |
+| + effectuerPaiement(): void        |
++------------------------------------+
+
++------------------------------------+
+|            GestionFlotte            |
++------------------------------------+
+| - voitures: List<Voiture>          |
++------------------------------------+
+| + ajouterVoiture(): void           |
+| + modifierVoiture(): void          |
+| + supprimerVoiture(): void         |
++------------------------------------+
